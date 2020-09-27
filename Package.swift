@@ -12,7 +12,7 @@ import PackageDescription
 let package = Package(
     name: "RxCoreLocation",
     products: [
-        .library(name: "RxCoreLocation", targets: ["RxCoreLocation"])
+        .library(name: "RxCoreLocation", type: .dynamic, targets: ["RxCoreLocation"])
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveX/RxSwift.git", from: "5.1.1")
